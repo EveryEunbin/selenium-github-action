@@ -1,6 +1,8 @@
 name: Selenium on github action
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [run_from_outside]
 jobs:
   scrape:
     runs-on: ubuntu-latest
